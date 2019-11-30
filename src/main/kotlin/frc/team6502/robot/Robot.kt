@@ -1,25 +1,21 @@
 package frc.team6502.robot
 
-import edu.wpi.first.hal.FRCNetComm
-import edu.wpi.first.hal.HAL
-import edu.wpi.first.hal.sim.DriverStationSim
-import edu.wpi.first.wpilibj.TimedRobot
+import frc.team6502.kyberlib.KRobot
 
 /**
  * Main robot class.
  */
-class Robot : TimedRobot() {
+class Robot : KRobot() {
 
     override fun robotInit() {
-        // report language as kotlin instead of assuming java because of JVM
-        HAL.report(FRCNetComm.tResourceType.kResourceType_Language, 6)
 
         // initialize RobotContainer and by extension subsystems
         RobotContainer
+
     }
 
     override fun robotPeriodic() {
-        
+
     }
 
     override fun disabledInit() {
